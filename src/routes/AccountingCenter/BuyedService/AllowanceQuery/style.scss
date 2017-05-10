@@ -1,0 +1,28 @@
+
+.inputRowAll .unitid{
+  .ant-input-group-addon .ant-select{
+    width:80px;
+    .ant-select-selection__rendered{padding-left: 0}
+  }
+}
+.search-group-border .search-radio-item{padding-right: 0;width: 100%;}
+.inputRowAll .ant-col-6{text-align: center;}
+.inputRowAll .ant-select-selection__rendered{margin: 0}
+.inputRowAll .ant-select-selection__rendered .ant-select-selection__placeholder{padding-left: 10px}
+.inputRowAll .ant-select-auto-complete.ant-select .ant-select-selection--single{height: 32px}
+.allowance_menu{
+  .ant-collapse-content-box .ant-row:nth-child(1){border-bottom: 1px solid #ddd}
+  .ant-collapse-content-box .ant-row:last-child{border-bottom:none}
+  .ant-row{
+    padding: 10px 0;
+    .d-text-table{
+      text-align: center;
+      div{line-height: 30px}
+      .d-title{color: #999;font-size: 14px;}
+      .d-text-right{text-align: right}
+      .d-text-left{text-align: left}
+      .ant-progress-inner{margin-top: 10px}
+    }
+  }
+  .borderBottom{border-bottom: 1px solid #ddd}
+}

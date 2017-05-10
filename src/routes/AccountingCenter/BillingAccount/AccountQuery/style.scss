@@ -1,0 +1,114 @@
+
+.card_list{
+  .ant-card-body{
+    overflow: hidden;
+    padding: 24px 24px 14px;
+  }
+  .ant-col-10{h4{margin-top: 0}}
+  .ant-col-6{
+    p span{
+      display: inline-block;
+      width: 60px;
+      text-align: right;
+    }
+  }
+
+  .ant-col-1{width: 1px;margin: 0 15px}
+  .ant-divider{height: 53px}
+  .type_1,.type_2{padding: 5px 6px;border-radius: 3px}
+  .type_2{background-color: #FFCC00}
+  .type_1{background-color: #66CCFF}
+}
+.page_list{
+  margin-top: 15px;
+  float: right;
+}
+.details_querya{
+  .ant-card-body{padding-bottom: 0}
+  .ant-col-12{
+    ul li{
+      margin-bottom: 10px;
+      span{
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+      }
+    }
+  }
+  .data-text{
+    margin-left: 15px;
+    margin-top: 5px;
+    .d-number{
+      font-size: 24px;
+    }
+    /*.fa-chevron-circle-down{
+      position: absolute;
+      left: 160px;
+      top: 18px;
+      z-index: 1;
+    }*/
+    .ant-calendar-picker{
+      //position: absolute;
+      //z-index: 2;
+      //top: 0;
+      background: none;
+      //*{background: none}
+      .ant-calendar-picker-input{
+        border: none;
+        font-size: 24px;
+        width: 200px;
+        margin-top: 14px;
+      }
+      .ant-input:focus, .ant-input:hover{
+        cursor: pointer;
+      }
+      .ant-calendar-picker-icon{display:none}
+    }
+  }
+  .data-item{
+    .data-icon,.data-text{
+      float: left;
+      .fa-calendar{
+        font-size: 30px;
+        color: #777;
+        margin-top: 16px;
+      }
+    }
+    .ant-calendar-picker input{color:#19a6f8}
+    .data-left{float: left}
+    .data-right{float: right;margin-right: 20px}
+  }
+  .ant-divider{height: 53px}
+  .ant-table-title{font-size: 16px;font-weight: bold;}
+  .ant-table-tbody{
+    tr:last-child td{border-bottom: none}
+  }
+  .line_p{margin: 15px -24px;height: 1px;background: #ddd;}
+}
+.icon32{
+  .Icon32_green{background: #66CC00;}
+  .Icon32_orange{background: #FF9900;}
+  .Icon32_grey{background: #999;}
+  .Icon32_blue{background: #2DB7F5;}
+  .data-icon{
+    margin-top: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    text-align: center;
+    .fa-external-link,.fa-database, .fa-download{
+      font-size: 20px;
+      color: #fff;
+      margin-top: 6px;
+    }
+  }
+}
+.d-amount{color: #6c0}
+.d-price{color: #f90}
+.title_span{margin-right: 15px}
+.color_2{color: green}
+.color_1{color: red}
+.color_3{color: gainsboro}
+.formBtn button{margin-left: 10px}
+.text-button{text-align: center}
+.myform .formFields .ant-form-item {margin-bottom: 0;}

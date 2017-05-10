@@ -1,0 +1,43 @@
+@import "../../../styles/common";
+
+.cashier-home,.text-icon-item{
+  margin-top: 0;
+
+  .circle{
+    width: 12px;
+    height: 12px;
+    @include radius(12px);
+    background: $grey;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+  .ant-card{
+    margin-bottom: 15px;
+    ul li{
+      line-height: 19px;
+      height: 19px;
+    }
+  }
+}
+
+.radius-small{
+  display: inline-block;
+  width: 16px;
+  height:16px;
+  @include radius(32px);
+  vertical-align: middle;
+}
+
+.test-grid{
+  background: #ececec;
+  height: 100%;
+  &:nth-child(1){
+    background: #000000;
+  }
+  &:nth-child(2){
+    background: #ff0000;
+  }
+  &:nth-child(3){
+    background: blue;
+  }
+}

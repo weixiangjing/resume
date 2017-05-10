@@ -1,0 +1,75 @@
+@import "../../../../styles/common";
+
+.details_bill{
+  .card_1{
+    border: none;
+    .ant-col-sm-8{background-color: #FFFFCC}
+  }
+  .title_span{margin-right: 15px}
+  .ant-card{
+    margin-bottom: 15px;
+
+  }
+  .ant-card-body{padding: 12px 24px}
+  .today-data{
+    border-right: 1px solid $grey;
+  }
+
+  .data-text{
+    margin-left: 15px;
+    margin-top: 5px;
+    .d-number{
+      font-size: 18px;
+    }
+    .d-text{
+      color:#333;
+      word-wrap: break-word;
+    }
+  }
+  .data-item{
+    .data-icon,.data-text{
+      float: left;
+      .bill_hide{display: none}
+      .bill_cycle{
+        background-color: #fc0;
+        color: #fff;
+        padding: 1px 5px;
+        border-radius: 2px;
+        margin-right: .5em;
+      }
+      .d-amount{color: #6c0}
+      .d-price{color: #f90}
+    }
+    .data-icon{
+      margin-top: 16px;
+      margin-left: 15px;
+    }
+    ul li {
+      margin-bottom: 10px;
+      span{
+      width: 100px;
+      display: inline-block;
+      text-align: right;
+      }
+    }
+  }
+  .ant-divider{height: 53px}
+  .manual_note{
+    span{
+      color:#fff;
+      padding: 2px 6px;
+      margin-right: 10px;
+      background-color: #6c0;
+      border-radius: 3px;
+    }
+    color: #6c0;
+    font-size: 14px;
+  }
+}
+.top_span{display: inline-block;width: 25%;text-align: right}
+._note{
+  text-align: center;
+  background-color: #ffc;
+  padding: 3px;
+}
+.hr-divider{margin-top: 0;margin-bottom: 10px}

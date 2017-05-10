@@ -1,0 +1,18 @@
+.payment-cascader{
+  &.loading .ant-cascader-picker:after{
+    display: inline-block;
+    animation: loadingCircle 1s infinite linear;
+    content: "\E6AE";
+    color: rgba(0,0,0,.43);
+    position: absolute;
+    top: 0;
+    right: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'anticon';
+    z-index: 1;
+  }
+}

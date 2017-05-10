@@ -1,0 +1,19 @@
+@import "../../styles/variable";
+
+.slide-bar {
+  background: transparent;
+  width: $menu_width;
+}
+.ant-menu-item.final{
+  padding-left: 2px !important;
+}
+.slide-bar{
+  .ant-menu-submenu-title>span{
+    color: #666;
+  }
+  .fa{
+    margin-right: 8px;
+    color: #ccc;
+    font-size: 14px;
+  }
+}

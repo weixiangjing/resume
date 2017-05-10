@@ -1,0 +1,23 @@
+.myform{
+  .ant-row .ant-form-item{margin-bottom: 0}
+  .ant-calendar-picker{
+    width: 100%;
+  }
+  .ant-form-item-label > label{
+    display: inline;
+  }
+  .form-action{
+   margin-bottom: 15px;
+  }
+  .ant-form-item .ant-select-selection__rendered{padding-left: 0}
+}
+.data-table{
+  padding: 8px 0;
+}
+.detail_modal{
+  ul li{
+    margin-bottom: 10px;
+    textarea.ant-input{vertical-align: top;}
+    .ant-input{width: 90%}
+  }
+}

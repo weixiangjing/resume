@@ -1,0 +1,55 @@
+@mixin shadow($size,$bg) {
+  -webkit-box-shadow: 0 0 $size $bg;
+  -moz-box-shadow: 0 0 $size $bg;
+  box-shadow: 0 0 $size $bg;
+}
+
+@mixin radius($r) {
+  -webkit-border-radius: $r;
+  -moz-border-radius: $r;
+  border-radius: $r;
+}
+@mixin radius-bottom-left($leftBottom:0){
+  -webkit-border-bottom-left-radius :$leftBottom ;
+  -moz-border-radius-bottomleft: $leftBottom;
+  border-bottom-left-radius: $leftBottom ;
+}
+@mixin radius-bottom-right($rightBottom:0){
+  -webkit-border-bottom-right-radius :$rightBottom ;
+  -moz-border-radius-bottomright: $rightBottom;
+  border-bottom-right-radius: $rightBottom ;
+}
+@mixin radius-top-right($rightBottom:0){
+  -webkit-border-top-right-radius :$rightBottom ;
+  -moz-border-radius-topright: $rightBottom;
+  border-top-right-radius: $rightBottom ;
+}
+@mixin radius-top-left($rightBottom:0){
+  -webkit-border-top-left-radius :$rightBottom ;
+  -moz-border-radius-topleft: $rightBottom;
+  border-top-left-radius: $rightBottom;
+}
+
+@mixin transition($prop,$time) {
+  -webkit-transition: $prop $time;
+  -moz-transition: $prop $time;
+  -ms-transition: $prop $time;
+  -o-transition: $prop $time;
+  transition: $prop $time;
+}
+
+@mixin transform($value) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -o-transform: $value;
+  transform: $value;
+}
+
+@mixin rotate ($deg){
+  transform:rotate($deg);
+  -ms-transform:rotate($deg); /* Internet Explorer */
+  -moz-transform:rotate($deg); /* Firefox */
+  -webkit-transform:rotate($deg); /* Safari 和 Chrome */
+  -o-transform:rotate($deg); /* Opera */
+}

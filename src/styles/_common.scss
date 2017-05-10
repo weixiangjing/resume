@@ -1,0 +1,539 @@
+@import "variable";
+@import "mixin";
+
+
+$label_h: 50px;
+
+.search-group-border {
+  .ant-input-affix-wrapper{
+    margin-left: 24px;
+  }
+  border: 1px solid $grey;
+  background: $grey;
+  margin-bottom: 15px;
+  @include radius(5px);
+  .ant-input-preSuffix-wrapper{
+    margin-left: 30px;
+  }
+  .ant-radio-group {
+    margin-left: 15px;
+  }
+  .collapse-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .search-radio-item {
+    position: relative;
+    display: table-cell;
+    background: #ffffff;
+    padding: 8px 0;
+    padding-right: 80px;
+
+  }
+  .search-label {
+    background: $grey;
+    padding-right: 10px;
+    display: table-cell !important;
+    min-width: 100px;
+    text-align: right;
+    vertical-align: middle;
+
+  }
+  .ant-row {
+    margin-bottom: 0;
+    background: #ffffff;
+    border-bottom: 1px solid $grey;
+  }
+  .ant-row:last-child {
+    border-bottom: none !important;
+  }
+}
+
+.ant-none-border {
+  .ant-radio-button-wrapper {
+    border: none !important;
+  }
+}
+
+.ant-active-color {
+  .ant-radio-button-wrapper-checked {
+    background: $primary-color;
+    color: #ffffff;
+    box-shadow: none;
+    border-radius: 3px !important;
+  }
+}
+
+.card-radio-group-extra {
+  .ant-card-extra {
+    top: 9px;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.inline-input-group {
+
+  > label {
+    color: rgba(0, 0, 0, .65);
+    &:after {
+      content: ":";
+      margin: 0 8px 0 2px;
+      position: relative;
+      top: -.5px;
+    }
+  }
+
+  input, .ant-select, textarea, .ant-radio-group {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  textarea {
+    vertical-align: top;
+  }
+
+}
+
+.input-size-xs {
+  input, textarea {
+    width: $width_xs
+  }
+  .ant-select {
+    width: $width_xs
+  }
+}
+
+.font-small {
+  font-size: $font_sm;
+}
+
+.font-md {
+  font-size: $font_md;
+}
+
+.font-lg {
+  font-size: $font_lg;
+}
+
+.font-xlg {
+  font-size: $font_xlg;
+}
+
+.input-size-sm {
+  input, textarea {
+    width: $width_sm
+  }
+  .ant-select {
+    width: $width_sm
+  }
+}
+
+.text-md {
+  font-size: 14px;
+}
+
+.main-title {
+  font-size: $main_title;
+  color: $title_color;
+  font-weight: 500;
+}
+
+.sec_title {
+  font-size: $sec_title;
+  color: $title_color;
+  font-weight: 500;
+}
+
+.small_title {
+  font-size: $small_title;
+  color: $title_color;
+  font-weight: 500;
+}
+
+.text {
+  font-size: $small_title;
+  color: $title_color
+}
+
+.des-text {
+  font-size: $small_title;
+  color: $des_text_color;
+}
+
+.invalid-color {
+  color: $invalid_color;
+}
+
+.link-color {
+  color: $link_color;
+}
+
+.input-size-de {
+  input, textarea {
+    width: $width_de
+  }
+  .ant-select {
+    width: $width_de
+  }
+  .ant-cascader-picker {
+    width: $width_de;
+    display: inline-block;
+  }
+}
+
+.input-size-lg {
+  input, textarea {
+    width: $width_lg
+  }
+  .ant-select {
+    width: $width_lg
+  }
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.input-group-width-select {
+  .ant-calendar-picker{
+    width: 188px;
+  }
+  .ant-calendar-picker-input{
+    width: 188px;
+    border:none;
+    input{
+      margin-left: 0;
+    }
+  }
+  .ant-select {
+    margin-left: 0;
+  }
+  .ant-select-selection, input {
+    border: none;
+    @include shadow(0, 0);
+    @include radius(0);
+  }
+  .input-select-group {
+    @include radius(3px);
+    border: 1px solid #ececec;
+    display: inline-block;
+    margin-left: 8px;
+    padding-right: 15px;
+  }
+
+}
+
+.ant-modal.modal-no-cancel .ant-modal-footer {
+  button:first-child {
+    display: none;
+  }
+}
+
+.ant-btn.ant-btn-danger {
+  background-color: #ea473d;
+  border-color: #ea473d;
+  color: #ffffff;
+  &:hover {
+    background-color: $highlight-color;
+    border-color: $highlight-color;
+    color: #ffffff;
+  }
+}
+
+.ant-btn.ant-btn-success {
+  background-color: #77ab6d;
+  border-color: #77ab6d;
+  color: #ffffff;
+  &:hover {
+    background-color: $success-color;
+    border-color: $success-color;
+    color: #ffffff;
+  }
+}
+
+.ant-card-head {
+  font-size: $main_title;
+  font-weight: 500;
+  color: $title_color;
+  padding: 14px 24px 10px 24px;
+  height: auto;
+  line-height: normal;
+
+}
+
+.rotate360 {
+  @include rotate(180deg);
+}
+
+.transition {
+  @include transition(all, 300ms);
+
+}
+
+.hover-scale:hover {
+  @extend .transition;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.text-gray {
+  color: $grey
+}
+
+.ant-none-radio {
+  .ant-radio {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .ant-radio-wrapper-checked {
+    span {
+      color: $link_color;
+    }
+  }
+}
+
+.form-hide {
+  visibility: hidden;
+  z-index: -999;
+  height: 0;
+}
+
+.bg-default {
+  background: $grey_normal;
+}
+
+.payment-channel-group {
+  label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    &:after {
+      content: ": ";
+
+    }
+  }
+  .payment-cascader {
+    display: inline-block;
+    width: 200px;
+    margin-left: 10px;
+    height: 32px;
+    input{
+      height:32px;
+    }
+
+  }
+}
+.mini{
+  .ant-pagination-options{
+    width: 200px;
+  }
+}
+.x-scroll{
+  &::-webkit-scrollbar{
+    width:5px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: $grey_normal;
+    border-radius: 3px;
+    border: solid 1px $normal-color;
+  }
+}
+.ant-pagination-options-size-changer{
+  width:auto !important;
+}
+.text-normal{
+  color: rgba(0,0,0,.65);
+}
+.text-shade{
+  color:#989898;
+}
+
+.card-item{
+  border:1px solid $grey_normal;
+  margin-bottom: 24px;
+  height: 140px;
+  position: relative;
+
+
+  .add-item{
+    font-size: 72px;
+    color: $des_text_color;
+
+
+  }
+
+
+  @include radius(4px);
+  .card-body{
+    padding: 12px;
+    overflow: hidden;
+    
+    .card-body-pic{
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      @include radius(4px);
+      margin-right: 16px;
+      overflow: hidden;
+      position: absolute;
+
+
+    }
+    .text-group{
+      padding-left: 62px;
+      padding-right: 8px;
+      display: block;
+      strong{
+        margin-bottom: 6px;
+        color: $title_color;
+      }
+      div{
+        color: $des_text_color;
+      }
+    }
+  }
+  .card-footer{
+    background: $gray_light;
+    border-top:1px solid  $grey;
+    overflow: hidden;
+    padding: 12px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+
+  }
+
+}
+
+.label-li{
+  overflow: hidden;
+  li{
+    position: relative;
+    padding-left: 15px;
+    &:before{
+      position: absolute;
+      display: block;
+      height: 6px;
+      width: 6px;
+      background: $warning-color;
+      @include radius(6px);
+      left: 0px;
+      content: '';
+      top: 6px;
+    }
+  }
+}
+
+.bordered{
+  border:1px solid $grey;
+  @include radius(4px);
+}
+.text-icon-item{
+
+  margin-top: 24px;
+  padding-left: 24px;
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .data-text{
+    margin-left: 15px;
+    height: 100%;
+    .d-number{
+      font-size: 24px;
+    }
+  }
+  .data-item{
+    height: 60px;
+    margin:24px 0;
+
+    .anticon{
+      font-size: 42px;
+    }
+    .data-icon,.data-text{
+      display: inline-block;
+      vertical-align: middle;
+
+      >p{
+        display: block;
+        height: 50%;
+        margin:0;
+        text-align: left;
+
+      }
+    }
+
+    .data-icon{
+      width:60px;
+      height: 60px;
+
+    }
+    .fa{
+      font-size: 30px;
+      background: #2db7f5;
+      border-radius: 100px;
+      text-align: center;
+      line-height: 60px;
+      color: #ffffff;
+
+    }
+  }
+}
+// 状态 点
+.corner-mark {
+  position: relative;
+  >span{
+    position: relative;
+  }
+  .font-lg {
+    margin-right: 6px;
+    position: absolute;
+    left: -12px;
+    top: -26px;
+    display: inline-block;
+    height: 0;
+    font-size: 32px;
+    width: 0;
+
+  }
+}
+
+.timeline-title{
+  color: #6699FF;
+}
+.timeline-title.error{
+  color: #FF6600;
+}
+.timeline-desc{
+  color: #999999;
+}
+
+.center{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-warning2{
+  background: $bg-warning2;
+}
+
+.text-ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.block{
+  display: block;
+}

@@ -1,0 +1,34 @@
+.auto-complete-async{
+  position: relative;
+
+}
+#drop-options-container{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 0;
+
+}
+.auto-complete-drop-container{
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  background: #ffffff;
+  overflow-y: auto;
+  z-index: 99999;
+  li{
+    padding: 12px 6px;
+    &:hover{
+      background: #ecf6fd;
+      cursor: pointer;
+    }
+
+  }
+  li.on{
+    background: #ecf6fd;
+  }
+
+
+
+ }
+

@@ -1,0 +1,53 @@
+
+
+@import "../../styles/variable";
+@import "../../styles/mixin";
+
+.product-item{
+  position: relative;
+  padding: 12px;
+  border:1px solid $grey_normal;
+  @include radius(6px);
+  .quantity-bar{
+    span{
+      display: inline-block;
+      width: 32px;
+      text-align: center;
+    }
+
+  }
+
+  .font-lg{
+    vertical-align: middle;
+    color: $des_text_color;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .item-desc-num{
+    padding-right: 45px;
+    >div{
+      border-right: 1px solid $grey_normal;
+    }
+    .item{
+
+      padding-right: 15px;;
+      &:nth-child(1){
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .text-danger{
+    color: $error-color
+  }
+  .item-del{
+    position: absolute;
+    top: 18px;
+    right: 19px;
+    font-size: 22px;
+    color: #989898;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

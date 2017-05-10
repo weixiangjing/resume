@@ -1,0 +1,94 @@
+
+@import "variable";
+
+li{
+  list-style: none;
+}
+
+a:hover,a:link,a:visited,a:focus,a:active{
+  text-decoration:none !important;
+}
+
+.ant-card-head-title{
+  margin: 0 !important;
+}
+.ant-menu{
+  background: none;
+  border-bottom:0;
+}
+.ant-input-number{
+  min-width: 110px;
+}
+
+.ant-switch-checked{
+  background-color: $success-color !important;
+  border-color: $success-color !important;
+}
+.ant-form-item{
+  .ant-select-selection__rendered{
+    position: absolute;
+    left: 0px;
+    top:0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ant-table-pagination{
+  .ant-pagination-total-text{
+    position: absolute;
+    left:0;
+  }
+}
+
+.ant-pagination{
+  float: right;
+  .ant-pagination-total-text{
+    position: absolute;
+    left:0;
+  }
+}
+
+.ant-form-item-with-help{
+  .ant-form-item-label{
+    vertical-align: top;
+  }
+}
+
+.header .ant-menu-item-selected{
+  color: $theme-color-blue !important;
+  border-bottom: 2px solid $theme-color-blue;
+}
+.header .ant-menu-item{
+  &:hover{
+    color: $theme-color-blue !important;
+    border-bottom: 2px solid $theme-color-blue;
+  }
+}
+
+.ant-menu-inline{
+  .ant-menu-item-selected{
+    border-right: 2px solid $theme-color-blue;
+  }
+}
+
+
+// <a></a>
+
+a{
+  color: $theme-color-blue;
+}
+
+.label{
+  padding: .2em .5em !important;
+}
+.label.label-default{
+  background: #c6c7cd;
+  color: #ffffff;
+}
+
+.ant-form-inline{
+  >.ant-form-item{
+    vertical-align: top;
+  }
+}

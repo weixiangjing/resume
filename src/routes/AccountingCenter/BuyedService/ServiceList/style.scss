@@ -1,0 +1,20 @@
+
+.inputRow .unitid{
+  padding: 8px 0 15px;
+  .ant-input-group-addon .ant-select{
+    width:80px;
+    .ant-select-selection__rendered .ant-select-selection__placeholder{padding-left: 10px}
+  }
+}
+.search-group-border .search-radio-item{padding-right: 0;width: 100%;}
+.inputRow .ant-col-6{text-align: center;padding: 8px 0;}
+.inputRow .ant-select-selection__rendered{margin: 0}
+.inputRow .ant-form-explain{display: none}
+.colorD{color:#ddd}
+.d-price{color: #f90}
+.hide-page{
+  .ant-pagination-options{
+    text-align: left;
+    .ant-pagination-options-size-changer{display: none}
+  }
+}

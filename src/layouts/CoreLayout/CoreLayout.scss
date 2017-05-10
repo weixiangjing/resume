@@ -1,0 +1,157 @@
+@import "../../styles/variable";
+@import "../../styles/mixin";
+@import "../../styles/core";
+
+html,body{
+  margin:0;
+  height:100%;
+}
+html{
+  min-width: 980px;
+}
+$footer-color:#989898;
+.tms-footer{
+  .company-logo-desc{
+    position: relative;
+    padding-left: 50px;
+    img{
+      position: absolute;
+      top: 3px;
+      left:0;
+    }
+  }
+  .company-right{
+    margin-right: 200px;
+    .font-small{
+      color: $footer-color;
+    }
+  }
+  ul{
+    margin-left: 48px;
+    &:nth-child(1){
+      li{
+        .circle{
+          background:#108EE9;;
+        }
+      }
+    }
+    &:nth-child(2){
+      li{
+        .circle{
+          background: #7EC856;
+        }
+      }
+    }
+
+    &:nth-child(3){
+    li{
+      .circle{
+        background: #F6B836;;
+      }
+    }
+  }
+    li{
+      position: relative;
+      a{
+        color: $footer-color;
+      }
+      .circle{
+        width: 3px;
+        height: 3px;
+        display: inline-block;
+        left: -7px;
+        top: 7px;
+        position: absolute;
+        @include radius(3px);
+      }
+      &:first-child{
+        margin-bottom: 8px;
+
+      }
+    }
+  }
+}
+.view-port-container{
+  position: relative;
+  overflow: initial;
+  min-width: 600px;
+  min-height: 600px;
+  background: #ffffff;
+  padding: $design-gutter*3 0;
+
+  display: block;
+  .slide-bar{
+    position: absolute;
+    left: 0;
+    top: 16px;
+  }
+  .view-port-content{
+    padding: 0 $design-gutter*3;
+    margin-left: $menu_width - 1;
+    border-left: solid 1px $grey_normal;
+    width: auto;
+  }
+}
+
+.gutter{
+  margin: $design-gutter;
+}
+.margin-v,.gutter-v{
+  margin: $design-gutter 0;
+}
+.margin-h,.gutter-h{
+  margin:0 $design-gutter
+}
+.margin-left,.gutter-left{
+  margin-left: $design-gutter;
+}
+.margin-right,.gutter-right{
+  margin-right:$design-gutter;
+}
+.margin-top,.gutter-top{
+  margin-top: $design-gutter;
+}
+.margin-bottom,.gutter-bottom{
+  margin-bottom:$design-gutter;
+}
+.over-hide{
+  overflow: hidden;
+}
+
+.margin-v-lg,.gutter-v-lg{
+  margin: $design-gutter_large 0;
+}
+.margin-h-lg,.gutter-h-lg{
+  margin:0 $design-gutter_large
+}
+.margin-left-lg,.gutter-left-lg{
+  margin-left: $design-gutter_large;
+}
+.margin-right-lg,.gutter-right-lg{
+  margin-right:$design-gutter_large;
+}
+.margin-top-lg,.gutter-top-lg{
+  margin-top: $design-gutter_large;
+}
+.margin-bottom-lg,.gutter-bottom-lg{
+  margin-bottom:$design-gutter_large;
+}
+
+.padding{
+  padding:$design-gutter;
+}
+.padding-v{
+  padding:$design-gutter 0;
+}
+.padding-h{
+  padding: 0 $design-gutter;
+}
+.table-row{
+  display:table;
+  width:100%;
+
+  >div{
+    display: table-cell;
+    text-align: center;
+  }
+}

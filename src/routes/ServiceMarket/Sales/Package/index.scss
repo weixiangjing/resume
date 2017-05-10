@@ -1,0 +1,57 @@
+
+@import "../../../../styles/variable";
+.sale-package{
+
+
+  .card-item{
+    height: 200px;
+
+    overflow: hidden;
+    .card-body{
+      padding: 24px;
+    }
+    .card-title{
+      margin-bottom: 8px;
+      position: relative;
+      padding-right: 40px;
+      .main-title{
+        display: block;
+        position: relative;
+
+      }
+      .text-danger{
+        position: absolute;
+        right: 0;
+        top:0;
+      }
+    }
+    .text-danger{
+      font-size: $main_title;
+    }
+    .pack-item-num{
+      text-align: right;
+    }
+    .pack-item-title{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .label-li{
+      li{
+        color: $sub_title_gray;;
+      }
+    }
+
+  }
+
+
+
+}
+
+.sale-package-alter{
+  border-bottom: 1px solid $grey;
+  .split-line{
+    border-right: 1px solid $grey;
+
+  }
+}
